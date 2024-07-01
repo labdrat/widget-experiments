@@ -11,6 +11,6 @@ var waitForElement = function(selector, callback) {
   };
   
   waitForElement("main", function() {
-    console.log("found element, dispatching...")
+    console.log("found main, dispatching load event...")
     window.dispatchEvent(widgetLoadEvent);
   });
